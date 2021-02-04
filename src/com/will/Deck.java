@@ -8,20 +8,18 @@ import java.util.Random;
 public class Deck {
     public Card cards = new Card();
     private List<String> deck;
+//    public List<String> hand;
+
 
     Random rand = new Random();
-//    final String SUITS[] = {"Hearts", "Diamonds", "Spades", "Clubs"};
-//    final String CARDNUMBERS[] = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "J", "Q", "K", "A"};
 
-    Deck() {
+    public Deck() {
         deck = new ArrayList<String>();
         for (int i = 0; i < cards.SUITS.length; i++) {
             for (int j = 0; j < cards.CARDNUMBERS.length; j++) {
                 deck.add(cards.CARDNUMBERS[j] + " of " + cards.SUITS[i]);
-//                System.out.println(deck);
             }
         }
-
     }
 
     public ArrayList<String> getDeck(){
@@ -31,11 +29,22 @@ public class Deck {
         return (ArrayList<String>) deck;
     }
 
-
-
-    public List<String> shuffleDeck() {
+    public void shuffleDeck() {
         Collections.shuffle(deck);
-        return deck;
     }
+
+    public int numberOfCardsLeft() {
+        return deck.size();
+    }
+
+
+    public String remove(int i) {
+       return deck.remove(i);
+    }
+
+
+
 }
+
+
 

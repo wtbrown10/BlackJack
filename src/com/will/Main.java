@@ -8,7 +8,16 @@ public class Main {
     public static void main(String[] args) {
         // write your code here
         Deck deck = new Deck();
-        System.out.println(deck.shuffleDeck());
+        Hand hand = new Hand();
+//        System.out.println(deck.shuffleDeck());
+        hand.initialDraw();
+
+//        System.out.println(deck.getDeck());
+//        System.out.println(deck.shuffleDeck());
+//        System.out.println(deck.numberOfCardsLeft());
+//        System.out.println(deck.getFirstIndex());
+//        System.out.println(deck.calculateHand());
+
 //        System.out.println(deck.getDeck());
 //        Card card = new Card();
 //        System.out.println(card.getCardValue());
