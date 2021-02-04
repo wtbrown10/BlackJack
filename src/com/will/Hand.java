@@ -103,8 +103,10 @@ public class Hand {
             if (value.toLowerCase().trim().equals("hit")) {
                 hit();
                 hitOrStand();
+                break;
             } else if (value.toLowerCase().trim().equals("stand")) {
                 stand();
+                break;
             } else {
                 System.out.println("Type hit if you would like another card or stand if you wish to end turn!");
             }
@@ -112,8 +114,6 @@ public class Hand {
     }
 
     public void endGame() {
-//        clears screen
-
         playAgain();
     }
 
