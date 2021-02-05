@@ -31,6 +31,7 @@ public class Deck {
 
     public void shuffleDeck() {
         Collections.shuffle(deck);
+        Collections.shuffle(deck);
     }
 
     public int numberOfCardsLeft() {
@@ -41,8 +42,6 @@ public class Deck {
     public String remove(int i) {
        return deck.remove(i);
     }
-
-
 
 }
 
